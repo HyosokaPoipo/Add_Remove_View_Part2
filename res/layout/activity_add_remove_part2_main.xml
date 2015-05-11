@@ -5,11 +5,53 @@
     android:orientation="vertical"
     tools:context=".AddRemovePart2MainActivity" >
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="17dp"
+            android:textSize="21dp"
+            android:text="Tahukah Anda :"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/isiBerita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal"
+            android:textSize="17dp"
+            android:text="Bahwa nelayan yang melaut dengan kisaran waktu satu hari satu malam disebut dengan istilah nelayan one day fishing"
+            
+            />
+        
+    </LinearLayout>
+    
     <TableRow 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_gravity="center"
         >
-        
-        
+    <Button 
+        android:id="@+id/prev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebelumnya"
+        android:onClick="prevNews"
+        />    
+     <Button 
+         android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berikutnya"
+        android:onClick="nextNews"
+         />   
     </TableRow>
 </LinearLayout>
